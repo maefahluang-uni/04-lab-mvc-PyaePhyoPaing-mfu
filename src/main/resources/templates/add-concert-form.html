@@ -8,7 +8,7 @@
 <body>
     <h1>Add Concert</h1>
     <!-- add form for adding concert-->
-    <form action="/concerts" method="post" th:object="${concert}">
+    <form th:action="@{/concerts}" method="post" th:object="${concert}">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" th:field="*{title}" required><br>
         
